@@ -147,3 +147,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error('Error fetching data:', error);
     }
 });
+
+function pinRow() {
+
+    var table = document.getElementById("min-w-full bg-gray-900 rounded-lg overflow-hidden shadow-md"); // Replace "myTable" with your table ID
+  
+    var rowToPin = table.rows[0]; // Select the first row to pin
+  
+    rowToPin.style.position = "fixed"; 
+  
+    rowToPin.style.top = "0px"; 
+  
+  }
+  
+  
+  
+  // Call the function when the page loads
+  
+  window.onload = pinRow; 
+  
